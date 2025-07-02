@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJ GROSS - Sistema de Asistencia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="login-bg">
+    <div id="login-section">
+        <div class="login-logo">JJ GROSS</div>
+        <div class="login-sub">Iniciar sesión</div>
+        <form id="login-form">
+            <label for="employee-code" class="login-label">Código de empleado</label>
+            <input type="text" id="employee-code" placeholder="Ingresa tu código" required>
+            <button id="login-btn" type="submit">Ingresar</button>
+        </form>
+    </div>
+    <div id="attendance-section" style="display:none;">
+        <div class="mensaje-camara" id="mensaje-camara"></div>
+        <h2>Registro de Asistencia</h2>
+        <video id="video" width="320" height="240" autoplay></video>
+        <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+        <div class="attendance-btns">
+            <button class="attendance-btn entrada" data-type="entrada">Entrada</button>
+            <button class="attendance-btn salida-refrigerio" data-type="salida_refrigerio">Salida refrigerio</button>
+            <button class="attendance-btn entrada-refrigerio" data-type="entrada_refrigerio">Entrada refrigerio</button>
+            <button class="attendance-btn salida" data-type="salida">Salida</button>
+        </div>
+        <button id="logout-btn">Cerrar sesión</button>
+    </div>
+    <div class="admin-layout" id="admin-section" style="display:none;">
+        <nav class="sidebar-admin">
+            <div class="sidebar-empresa">JJ GROSS</div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item active" id="sidebar-asistencia"><span>Registro de asistencia</span></li>
+                <li class="sidebar-item" id="sidebar-personal"><span>Registro de personal</span></li>
+            </ul>
+            <button id="admin-logout-btn" class="sidebar-logout">Cerrar sesión</button>
+        </nav>
+        <main class="admin-main">
+            <section class="admin-tab-content" id="admin-reporte">
+                <div class="reporte-header">
+                    <h3>Últimas Marcaciones</h3>
+                    <div class="reporte-controls">
+                        <label>Mostrar
+                            <select id="select-cantidad">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </label>
+                        <label>Buscar:
+                            <input type="text" id="input-buscar" placeholder="Nombre o código">
+                        </label>
+                        <button id="btn-buscar">Buscar</button>
+                        <button id="download-pdf-btn" class="btn-pdf">Descargar PDF</button>
+                    </div>
+                </div>
+                <table id="marcaciones-table">
+                    <thead>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Código</th>
+                            <th>Nombres</th>
+                            <th>Fecha</th>
+                            <th>HoraMarcación</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+            <section class="admin-tab-content" id="admin-trabajadores" style="display:none;">
+                <h3>Gestión de Trabajadores</h3>
+                <form id="form-trabajador">
+                    <input type="text" id="nuevo-codigo" placeholder="Código de empleado" required>
+                    <input type="text" id="nuevo-nombre" placeholder="Nombre del empleado" required>
+                    <button type="submit">Agregar/Actualizar</button>
+                </form>
+                <table id="tabla-trabajadores">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
