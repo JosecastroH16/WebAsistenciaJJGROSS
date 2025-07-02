@@ -1,85 +1,42 @@
-# Biblioteca Virtual - Cultura Peruana
+# WebAsistenciaJJGROSS
 
-Una plataforma educativa interactiva diseñada para estudiantes de nivel secundario, enfocada en la difusión y aprendizaje de la cultura peruana.
+Sistema de Asistencia para Empresas - JJ GROSS
 
-## Características
+---
 
-- Diseño responsive y accesible
-- Interfaz moderna y amigable
-- Sistema de gamificación
-- Contenido multimedia interactivo
-- Soporte para conexiones lentas
-- Modo offline
-- Compatibilidad con múltiples dispositivos
+## Descripción
+WebAsistenciaJJGROSS es una aplicación web moderna para el control de asistencia de empleados, desarrollada para la empresa **JJ GROSS**. Permite el registro de asistencias con cámara, gestión de personal y un panel de administración con reportes descargables.
 
-## Secciones Temáticas
+## Funcionalidades principales
+- **Login:** Acceso para empleados (con código) y administrador (con "admin").
+- **Registro de asistencia:**
+  - Entrada, Salida a refrigerio, Entrada de refrigerio y Salida.
+  - Captura de foto con la cámara como comprobante.
+  - Mensaje personalizado para cada trabajador.
+- **Panel de administración:**
+  - Reporte de asistencias con fotos, fechas y horas.
+  - Búsqueda y filtrado por nombre o código.
+  - Descarga de reporte en PDF.
+  - Gestión de trabajadores (agregar, editar, eliminar).
+- **Diseño profesional:**
+  - Paleta de colores azul elegante.
+  - Interfaz moderna y responsiva.
 
-1. Lenguas Originarias
-2. Danzas Típicas
-3. Gastronomía
-4. Festividades
-5. Literatura Oral
-6. Arte Ancestral
+## ¿Cómo usar?
+1. **Clona o descarga este repositorio.**
+2. Abre el archivo `index.html` en tu navegador.
+3. Para ingresar como administrador, usa el código `admin` en el login.
+4. Para registrar asistencia, usa cualquier código de empleado registrado.
 
-## Requisitos Técnicos
-
-- Navegador web moderno (Chrome, Firefox, Safari, Edge)
-- Conexión a Internet (aunque algunas funciones están disponibles offline)
-- JavaScript habilitado
-
-## Estructura del Proyecto
-
-```
-biblioteca-virtual/
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── main.js
-├── img/
-│   └── (imágenes del proyecto)
-└── README.md
-```
-
-## Características de Accesibilidad
-
-- Soporte para lectores de pantalla
-- Alto contraste
-- Tamaños de fuente ajustables
-- Navegación por teclado
-- Modo oscuro
-- Reducción de movimiento
-
-## Optimizaciones de Rendimiento
-
-- Lazy loading de imágenes
-- Carga progresiva de contenido
-- Detección de conexión lenta
-- Almacenamiento en caché
-- Compresión de recursos
-
-## Contribuir
-
-Para contribuir al proyecto:
-
-1. Haz un fork del repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
-
-## Contacto
-
-Para más información o sugerencias, por favor contacta al equipo del proyecto a través de:
-
-- Email: contacto@bibliotecavirtual.edu.pe
-- Twitter: [@BibliotecaVirtual](https://twitter.com/BibliotecaVirtual)
-- Facebook: [Biblioteca Virtual Peruana](https://facebook.com/BibliotecaVirtual)
+## Publicar en GitHub Pages
+1. Sube todos los archivos a tu repositorio en GitHub.
+2. Ve a **Settings > Pages**.
+3. En "Source" selecciona la rama `main` y la carpeta `/ (root)`.
+4. Guarda y espera unos minutos.
+5. Accede a tu web en: `https://<tuusuario>.github.io/<nombre-repo>/`
 
 ## Créditos
+Desarrollado para JJ GROSS.
 
-Desarrollado con ❤️ para la educación peruana. 
+---
+¡Gracias por usar WebAsistenciaJJGROSS! 
